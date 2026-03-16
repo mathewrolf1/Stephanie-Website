@@ -15,7 +15,7 @@ const bodyFont = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Steph Wedding Photography",
+  title: "Stephanie Guerra Photography",
   description: "Editorial, romantic wedding photography portfolio.",
 };
 
