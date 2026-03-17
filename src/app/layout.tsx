@@ -29,8 +29,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://res.cloudinary.com/dwvx7bzki/image/upload/v1773732725/stephicon_euw4ec.jpg",
-        width: 1200,
-        height: 630,
+        width: 501,
+        height: 501,
         alt: "Stephanie Guerra Photography",
       },
     ],
