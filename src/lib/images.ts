@@ -83,7 +83,6 @@ const Motherhood: string[] = [
   `${CDN}/images/Motherhood/DSC03092.JPG`,
   `${CDN}/images/Motherhood/DSC03341.JPG`,
   `${CDN}/images/Motherhood/DSC03464.JPG`,
-  `${CDN}/images/Motherhood/DSC03665(1).JPG`,
   `${CDN}/images/Motherhood/DSC03665.JPG`,
   `${CDN}/images/Motherhood/DSC03786.JPG`,
   `${CDN}/images/Motherhood/DSC04021.jpg`,
