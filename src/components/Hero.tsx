@@ -8,16 +8,19 @@ type HeroProps = {
   name: string;
 };
 
+const CDN = "https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto";
+
 const heroImages = [
-  "/images/Weddings/DSC07947.JPG",
-  "/images/Weddings/DSC07938.JPG",
-  "/images/Front page/DSC03479.jpg",
-  "/images/Front page/DSC04021.jpg",
-  "/images/Front page/DSC00370.jpg"
+  `${CDN}/images/Weddings/DSC07947.JPG`,
+  `${CDN}/images/Weddings/DSC07938.JPG`,
+  `${CDN}/images/Front page/DSC03479.jpg`,
+  `${CDN}/images/Front page/DSC04021.jpg`,
+  `${CDN}/images/Motherhood/DSC02833.jpg`,
 ];
 
-const SLIDE_DURATION_MS = 7000;
+const SLIDE_DURATION_MS = 5000;
 const spring = { type: "spring", stiffness: 100, damping: 20, mass: 1 } as const;
+const fade = { duration: 1.2, ease: "easeInOut" } as const;
 
 export function Hero({ name }: HeroProps) {
   const [index, setIndex] = useState(0);
@@ -35,13 +38,13 @@ export function Hero({ name }: HeroProps) {
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden text-white">
       {/* Background carousel */}
       <div className="absolute inset-0 -z-10">
-        <AnimatePresence mode="wait">
+        <AnimatePresence>
           <motion.div
             key={currentImage}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={spring}
+            transition={fade}
             className="absolute inset-0"
           >
             {currentImage && (

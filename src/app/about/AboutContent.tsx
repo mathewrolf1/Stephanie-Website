@@ -42,7 +42,7 @@ export function AboutContent() {
               style={{ outline: "3px solid #F7E7CE" }}
             >
               <Image
-                src="/family.png"
+                src="https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/family.png"
                 alt="Family photo 1"
                 width={900}
                 height={420}
@@ -58,7 +58,7 @@ export function AboutContent() {
               style={{ outline: "3px solid #F7E7CE" }}
             >
               <Image
-                src="/family2.png"
+                src="https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/family2.png"
                 alt="Family photo 2"
                 width={450}
                 height={420}
@@ -67,7 +67,11 @@ export function AboutContent() {
             </motion.div>
 
             {/* Row 2: three equal */}
-            {["/family3.png", "/family4.png", "/family5.png"].map((src, i) => (
+            {[
+              "https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/family3.png",
+              "https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/family4.png",
+              "https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/family5.png",
+            ].map((src, i) => (
               <motion.div
                 key={src}
                 initial={{ opacity: 0, y: 20 }}
