@@ -42,7 +42,7 @@ export function AboutContent() {
               style={{ outline: "3px solid #F7E7CE" }}
             >
               <Image
-                src="https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/images/family.png"
+                src="https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/family_ydixum.png"
                 alt="Family photo 1"
                 width={900}
                 height={420}
@@ -58,7 +58,7 @@ export function AboutContent() {
               style={{ outline: "3px solid #F7E7CE" }}
             >
               <Image
-                src="https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/images/family2.png"
+                src="https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/family2_ptqw5j.png"
                 alt="Family photo 2"
                 width={450}
                 height={420}
@@ -68,9 +68,9 @@ export function AboutContent() {
 
             {/* Row 2: three equal */}
             {[
-              "https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/images/family3.png",
-              "https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/images/family4.png",
-              "https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/images/family5.png",
+              "https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/family3_efruiu.png",
+              "https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/v1773716302/family4.png",
+              "https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/family5_nyjxuj.png",
             ].map((src, i) => (
               <motion.div
                 key={src}
