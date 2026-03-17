@@ -19,7 +19,7 @@ export function Footer() {
             className="opacity-70 transition hover:opacity-100"
           >
             <Image
-              src="/icons/instagram.png"
+              src="https://res.cloudinary.com/dwvx7bzki/image/upload/v1773717103/instagram_mdllyt.png"
               alt="Instagram"
               width={22}
               height={22}
@@ -33,7 +33,7 @@ export function Footer() {
             className="opacity-70 transition hover:opacity-100"
           >
             <Image
-              src="/icons/facebook.png"
+              src="https://res.cloudinary.com/dwvx7bzki/image/upload/v1773717103/facebook_dq0jxt.png"
               alt="Facebook"
               width={28}
               height={28}
