@@ -18,6 +18,7 @@ const heroImages = [
   `${CDN}/images/Engagement/DSC07371.jpg`,
   `${CDN}/images/Engagement/OSC_0090.jpg`,
   `${CDN}/images/Motherhood/DSC03092.jpg`,
+  `https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/front_agplxs.jpg`,
 ];
 
 const SLIDE_DURATION_MS = 5000;

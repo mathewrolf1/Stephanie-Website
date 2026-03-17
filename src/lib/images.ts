@@ -16,6 +16,7 @@ const CDN = "https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto";
 // ─────────────────────────────────────────────────────────────────────────────
 
 const Weddings: string[] = [
+  `https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/wed_ly9eai.jpg`,
   `${CDN}/images/Weddings/DSC05718.JPG`,
   `${CDN}/images/Weddings/DSC06020.JPG`,
   `${CDN}/images/Weddings/DSC06406.JPG`,
