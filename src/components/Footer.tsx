@@ -9,7 +9,7 @@ export function Footer() {
           Follow Me On Social Media
         </p>
         <div className="flex flex-col items-center gap-1">
-          <p className="font-heading text-3xl italic text-neutral-600 md:text-4xl">
+          <p className="font-heading text-2xl italic text-neutral-600 md:text-3xl">
             @stephanieguerraphoto
           </p>
           <p className="text-[10px] tracking-[0.2em] text-neutral-400">
