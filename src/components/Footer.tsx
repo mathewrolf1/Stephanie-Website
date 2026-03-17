@@ -13,7 +13,7 @@ export function Footer() {
             @stephanieguerraphoto
           </p>
           <p className="text-[10px] tracking-[0.2em] text-neutral-400">
-            © {new Date().getFullYear()} Stephanie Guerra Photography. All rights reserved.
+            © {new Date().getFullYear()} Stephanie Guerra Photography. 
           </p>
         </div>
         <div className="flex items-center gap-3">
