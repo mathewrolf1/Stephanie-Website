@@ -22,7 +22,7 @@ export function Navbar() {
       <nav className="flex w-full items-center bg-[#fdfbf7] shadow-sm px-8 py-4">
 
         {/* Left links — desktop only */}
-        <div className="hidden md:flex flex-1 items-center gap-8 text-[10px] uppercase tracking-[0.25em] text-neutral-600">
+        <div className="hidden md:flex flex-1 items-center gap-8 text-xs uppercase tracking-[0.25em] text-neutral-600">
           <Link href="/" className="hover:text-[--color-accent] transition-colors">
             Home
           </Link>
@@ -45,7 +45,7 @@ export function Navbar() {
         </Link>
 
         {/* Right links — desktop only */}
-        <div className="hidden md:flex flex-1 items-center justify-end gap-8 text-[10px] uppercase tracking-[0.25em] text-neutral-600">
+        <div className="hidden md:flex flex-1 items-center justify-end gap-8 text-xs uppercase tracking-[0.25em] text-neutral-600">
 
           {/* Portfolio dropdown */}
           <div
@@ -81,7 +81,7 @@ export function Navbar() {
                       <Link
                         key={cat}
                         href={`/portfolio/${cat.toLowerCase()}`}
-                        className="block px-5 py-2 text-[10px] uppercase tracking-[0.2em] text-neutral-600 hover:text-[--color-accent] hover:bg-black/[0.02] transition-colors"
+                        className="block px-5 py-2 text-xs uppercase tracking-[0.2em] text-neutral-600 hover:text-[--color-accent] hover:bg-black/[0.02] transition-colors"
                       >
                         {cat}
                       </Link>
@@ -154,20 +154,20 @@ export function Navbar() {
               <Link
                 href="/"
                 onClick={() => setMobileOpen(false)}
-                className="block px-8 py-3 text-[10px] uppercase tracking-[0.25em] text-neutral-600 hover:text-[--color-accent] transition-colors"
+                className="block px-8 py-3 text-xs uppercase tracking-[0.25em] text-neutral-600 hover:text-[--color-accent] transition-colors"
               >
                 Home
               </Link>
               <Link
                 href="/about"
                 onClick={() => setMobileOpen(false)}
-                className="block px-8 py-3 text-[10px] uppercase tracking-[0.25em] text-neutral-600 hover:text-[--color-accent] transition-colors"
+                className="block px-8 py-3 text-xs uppercase tracking-[0.25em] text-neutral-600 hover:text-[--color-accent] transition-colors"
               >
                 About
               </Link>
 
               {/* Portfolio sub-links */}
-              <p className="px-8 pt-3 pb-1 text-[9px] uppercase tracking-[0.3em] text-neutral-400">
+              <p className="px-8 pt-3 pb-1 text-[11px] uppercase tracking-[0.3em] text-neutral-400">
                 Portfolio
               </p>
               {portfolioCategories.map((cat) => (
@@ -175,7 +175,7 @@ export function Navbar() {
                   key={cat}
                   href={`/portfolio/${cat.toLowerCase()}`}
                   onClick={() => setMobileOpen(false)}
-                  className="block px-12 py-2.5 text-[10px] uppercase tracking-[0.25em] text-neutral-600 hover:text-[--color-accent] transition-colors"
+                  className="block px-12 py-2.5 text-xs uppercase tracking-[0.25em] text-neutral-600 hover:text-[--color-accent] transition-colors"
                 >
                   {cat}
                 </Link>
@@ -184,21 +184,21 @@ export function Navbar() {
               <Link
                 href="/faq"
                 onClick={() => setMobileOpen(false)}
-                className="block px-8 py-3 text-[10px] uppercase tracking-[0.25em] text-neutral-600 hover:text-[--color-accent] transition-colors"
+                className="block px-8 py-3 text-xs uppercase tracking-[0.25em] text-neutral-600 hover:text-[--color-accent] transition-colors"
               >
                 Q&amp;A
               </Link>
               <Link
                 href="/prices"
                 onClick={() => setMobileOpen(false)}
-                className="block px-8 py-3 text-[10px] uppercase tracking-[0.25em] text-neutral-600 hover:text-[--color-accent] transition-colors"
+                className="block px-8 py-3 text-xs uppercase tracking-[0.25em] text-neutral-600 hover:text-[--color-accent] transition-colors"
               >
                 Prices
               </Link>
               <Link
                 href="/book"
                 onClick={() => setMobileOpen(false)}
-                className="block px-8 py-3 text-[10px] uppercase tracking-[0.25em] text-[--color-accent] font-medium transition-colors"
+                className="block px-8 py-3 text-xs uppercase tracking-[0.25em] text-[--color-accent] font-medium transition-colors"
               >
                 Book Now
               </Link>
