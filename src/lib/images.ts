@@ -23,7 +23,6 @@ const Weddings: string[] = [
   `${CDN}/images/Weddings/DSC07364.JPG`,
   `${CDN}/images/Weddings/DSC07397.JPG`,
   `${CDN}/images/Weddings/DSC07938.JPG`,
-  `${CDN}/images/Weddings/DSC07947.JPG`,
   `${CDN}/images/Weddings/DSC08450.JPG`,
   `${CDN}/images/Weddings/DSC08543.JPG`,
   `${CDN}/images/Weddings/OSC_0169.jpg`,

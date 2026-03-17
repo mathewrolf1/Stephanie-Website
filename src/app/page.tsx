@@ -37,7 +37,7 @@ export default function Home() {
             className="relative aspect-[3/4] w-full overflow-hidden rounded-sm shadow-md border-[3px] border-[#F7E7CE]"
           >
             <Image
-              src="https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/v1773716303/stephanie_rs7q7u.png"
+              src="https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/v1773732725/selfsteph_qdzdky.jpg"
               alt="Stephanie Guerra"
               fill
               sizes="(min-width: 768px) 50vw, 100vw"

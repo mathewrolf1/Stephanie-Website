@@ -95,7 +95,7 @@ export function BookContent() {
               transition={{ ...spring, delay: 0.2 }}
               className="mt-4 text-sm leading-relaxed text-neutral-500"
             >
-              I will get back to you within 1–4 hours!
+              I will get back to you within 24 hours!
             </motion.p>
           </div>
         </div>
@@ -277,7 +277,7 @@ export function BookContent() {
               </motion.button>
 
               <p className="text-center text-[10px] leading-relaxed text-neutral-400">
-                I typically respond within 1–4 hours. You can also reach me directly at{" "}
+                I typically respond within 24 hours. You can also reach me directly at{" "}
                 <a
                   href={`https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(GMAIL_TO)}`}
                   target="_blank"

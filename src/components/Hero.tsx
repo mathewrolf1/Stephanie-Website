@@ -11,11 +11,13 @@ type HeroProps = {
 const CDN = "https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto";
 
 const heroImages = [
-  `${CDN}/images/Weddings/DSC07947.JPG`,
   `${CDN}/images/Weddings/DSC07938.JPG`,
   `${CDN}/images/Front page/DSC03479.jpg`,
   `${CDN}/images/Front page/DSC04021.jpg`,
   `${CDN}/images/Motherhood/DSC02833.jpg`,
+  `${CDN}/images/Engagement/DSC07371.jpg`,
+  `${CDN}/images/Engagement/OSC_0090.jpg`,
+  `${CDN}/images/Motherhood/DSC03092.jpg`,
 ];
 
 const SLIDE_DURATION_MS = 5000;
@@ -36,6 +38,16 @@ export function Hero({ name }: HeroProps) {
 
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden text-white">
+      {/* Top-left logo */}
+      <div className="absolute top-6 left-6 z-10 w-28 md:w-40">
+        <Image
+          src="https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/v1773733586/stephicon-removebg-preview_dtuslb.png"
+          alt="Stephanie Guerra Photography"
+          width={400}
+          height={400}
+          className="w-full h-auto object-contain drop-shadow-[0_4px_24px_rgba(255,255,255,0.6)]"
+        />
+      </div>
       {/* Background carousel */}
       <div className="absolute inset-0 -z-10">
         <AnimatePresence>
@@ -62,39 +74,24 @@ export function Hero({ name }: HeroProps) {
         </AnimatePresence>
       </div>
 
-      {/* Centered text */}
-      <div className="relative z-10 flex flex-col items-center text-center px-6">
-        <div className="overflow-hidden">
-          <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={spring}
-            className="font-heading text-4xl font-light uppercase tracking-[0.2em] text-white md:text-6xl lg:text-7xl"
-          >
-            Stephanie
-          </motion.h1>
-        </div>
-        <div className="overflow-hidden">
-          <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ ...spring, delay: 0.1 }}
-            className="font-heading text-4xl font-light uppercase tracking-[0.2em] text-white md:text-6xl lg:text-7xl"
-          >
-            Guerra
-          </motion.h1>
-        </div>
-
-        <div className="overflow-hidden mt-4">
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ ...spring, delay: 0.2 }}
-            className="font-heading text-lg italic text-white/90 md:text-2xl"
-          >
-            for the romantic &amp; timeless
-          </motion.p>
-        </div>
+      {/* Top center text */}
+      <div className="absolute top-16 z-10 flex flex-col items-center text-center px-6 w-full">
+        <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={spring}
+          className="font-heading text-xl md:text-2xl italic text-white"
+        >
+          Stephanie Guerra
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ ...spring, delay: 0.1 }}
+          className="font-[family-name:var(--font-script)] text-xl md:text-2xl text-white/90"
+        >
+          Photography
+        </motion.p>
       </div>
     </section>
   );

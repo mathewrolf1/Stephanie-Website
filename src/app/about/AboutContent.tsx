@@ -30,104 +30,61 @@ const pillars = [
 export function AboutContent() {
   return (
     <>
-      {/* Family Gallery */}
+      {/* Self-portrait + Bio */}
       <section className="bg-[--color-background] px-6 pt-20 pb-16">
-        <div className="mx-auto max-w-6xl">
-          <div className="grid grid-cols-3 gap-3">
+        <div className="mx-auto max-w-6xl space-y-16">
+
+          {/* Image left, text right */}
+          <div className="grid gap-12 md:grid-cols-2 md:items-center">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, x: -24 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={spring}
-              className="col-span-2 h-[420px] overflow-hidden"
-              style={{ outline: "3px solid #F7E7CE" }}
+              viewport={{ once: true }}
+              className="relative aspect-[3/4] w-full overflow-hidden rounded-sm shadow-md border-[3px] border-[#F7E7CE]"
             >
               <Image
-                src="https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/family_ydixum.png"
-                alt="Family photo 1"
-                width={900}
-                height={420}
-                priority
-                className="h-full w-full object-cover"
+                src="https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/v1773732725/selfsteph_qdzdky.jpg"
+                alt="Stephanie Guerra"
+                fill
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="object-cover"
               />
             </motion.div>
+
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, x: 24 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{ ...spring, delay: 0.1 }}
-              className="col-span-1 h-[420px] overflow-hidden"
-              style={{ outline: "3px solid #F7E7CE" }}
+              viewport={{ once: true }}
+              className="space-y-5 text-sm leading-relaxed text-neutral-600 md:text-base"
             >
-              <Image
-                src="https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/family2_ptqw5j.png"
-                alt="Family photo 2"
-                width={450}
-                height={420}
-                className="h-full w-full object-cover"
-              />
+              <p>
+                Hi, I’m Stephanie — I am a photographer specializing in timeless, elegant, and editorial imagery for weddings, families, and motherhood. Since first discovering my passion for photography while creating my high school yearbook in 2013, I have been drawn to the art of preserving life’s most meaningful moments with intention and beauty.
+              </p>
+              <p>
+                My work is inspired by a refined, editorial approach—blending genuine emotion with thoughtful composition and soft, natural light. I believe photographs should feel both effortless and elevated, capturing not only how a moment looked, but how it felt. Each image is created with a focus on connection, authenticity, and a timeless aesthetic that will remain meaningful for generations.
+              </p>
+              <p>
+                From wedding celebrations to the quiet intimacy of motherhood and the evolving story of family life, I approach every session with care, artistry, and attention to detail. My goal is to create an experience that feels relaxed and natural while delivering imagery that is polished, sophisticated, and enduring.
+                Based in Northern California, I am available for travel and honored to document stories wherever they unfold.
+              </p>
             </motion.div>
-
-            {/* Row 2: three equal */}
-            {[
-              "https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/family3_efruiu.png",
-              "https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/v1773716302/family4.png",
-              "https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/family5_nyjxuj.png",
-            ].map((src, i) => (
-              <motion.div
-                key={src}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ ...spring, delay: (i + 2) * 0.1 }}
-                className="col-span-1 h-[300px] overflow-hidden"
-                style={{ outline: "3px solid #F7E7CE" }}
-              >
-                <Image
-                  src={src}
-                  alt={`Family photo ${i + 3}`}
-                  width={450}
-                  height={300}
-                  className="h-full w-full object-cover"
-                />
-              </motion.div>
-            ))}
           </div>
-        </div>
-      </section>
 
-      {/* Bio */}
-      <section className="bg-[--color-background] px-6 pb-20">
-        <div className="mx-auto grid max-w-6xl gap-16 md:grid-cols-5">
+          {/* Quote below */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={spring}
             viewport={{ once: true }}
-            className="md:col-span-2"
           >
             <p className="font-heading text-2xl leading-snug text-[--color-foreground] md:text-3xl">
-              "Capturing life’s fleeting moments, one frame at a time. 
-                Let’s create memories you’ll feel forever." 📸💛
+              "Capturing life's fleeting moments, one frame at a time.
+                Let's create memories you'll feel forever."
             </p>
           </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ ...spring, delay: 0.1 }}
-            viewport={{ once: true }}
-            className="space-y-5 text-sm leading-relaxed text-neutral-600 md:col-span-3 md:text-base"
-          >
-            <p>
-              Hi, I’m Stephanie — I am a photographer specializing in timeless, elegant, and editorial imagery for weddings, families, and motherhood. Since first discovering my passion for photography while creating my high school yearbook in 2013, I have been drawn to the art of preserving life’s most meaningful moments with intention and beauty.
 
-            </p>
-            <p>
-              My work is inspired by a refined, editorial approach—blending genuine emotion with thoughtful composition and soft, natural light. I believe photographs should feel both effortless and elevated, capturing not only how a moment looked, but how it felt. Each image is created with a focus on connection, authenticity, and a timeless aesthetic that will remain meaningful for generations.
-
-            </p>
-            <p>
-              From wedding celebrations to the quiet intimacy of motherhood and the evolving story of family life, I approach every session with care, artistry, and attention to detail. My goal is to create an experience that feels relaxed and natural while delivering imagery that is polished, sophisticated, and enduring.
-              Based in Northern California, I am available for travel and honored to document stories wherever they unfold.
-            </p>
-          </motion.div>
         </div>
       </section>
 

@@ -44,11 +44,7 @@ const faqs = [
     answer:
       "Wedding galleries are delivered within 6–8 weeks. Portrait sessions (engagement, family, motherhood) are typically ready within 3–4 weeks. You'll receive a private online gallery with full download rights.",
   },
-  {
-    question: "Do you travel for weddings?",
-    answer:
-      "Absolutely. I'm based in Northern California but love destination weddings. Travel expenses (flights, accommodation) are billed at cost and discussed during the booking process. I've shot weddings across the US and internationally.",
-  },
+  
 ];
 
 function AccordionItem({
