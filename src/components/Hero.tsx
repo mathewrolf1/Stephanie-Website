@@ -39,16 +39,6 @@ export function Hero({ name }: HeroProps) {
 
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden text-white">
-      {/* Top-left logo */}
-      <div className="absolute top-6 left-6 z-10 w-28 md:w-40">
-        <Image
-          src="https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/v1773733586/stephicon-removebg-preview_dtuslb.png"
-          alt="Stephanie Guerra Photography"
-          width={400}
-          height={400}
-          className="w-full h-auto object-contain drop-shadow-[0_4px_24px_rgba(255,255,255,0.6)]"
-        />
-      </div>
       {/* Background carousel */}
       <div className="absolute inset-0 -z-10">
         <AnimatePresence>
@@ -77,6 +67,20 @@ export function Hero({ name }: HeroProps) {
 
       {/* Top center text */}
       <div className="absolute top-16 z-10 flex flex-col items-center text-center px-6 w-full">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={spring}
+          className="mb-3"
+        >
+          <Image
+            src="https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto/v1773732725/stephicon_euw4ec.jpg"
+            alt="Stephanie Guerra Photography"
+            width={100}
+            height={100}
+            className="h-24 w-auto object-contain drop-shadow-[0_4px_16px_rgba(0,0,0,0.5)]"
+          />
+        </motion.div>
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
