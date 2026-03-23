@@ -11,7 +11,8 @@ type HeroProps = {
 const CDN = "https://res.cloudinary.com/dwvx7bzki/image/upload/q_auto,f_auto";
 
 const heroImages = [
-  `${CDN}/images/Weddings/DSC07938.JPG`,
+  `${CDN}/v1774290094/IMG_0667_w3suzx.png`,
+  `${CDN}/v1774290094/IMG_0668_o5gqz3.png`,
   `${CDN}/images/Front page/DSC03479.jpg`,
   `${CDN}/images/Front page/DSC04021.jpg`,
   `${CDN}/images/Motherhood/DSC02833.jpg`,

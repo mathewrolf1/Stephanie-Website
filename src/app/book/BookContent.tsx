@@ -32,11 +32,11 @@ function openGmail(e: { preventDefault(): void; currentTarget: HTMLFormElement }
     message,
   ].join("\n");
 
-  const url =
-    `https://mail.google.com/mail/?view=cm` +
-    `&to=${encodeURIComponent(GMAIL_TO)}` +
-    `&su=${encodeURIComponent(subject)}` +
-    `&body=${encodeURIComponent(body)}`;
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  const url = isMobile
+    ? `mailto:${encodeURIComponent(GMAIL_TO)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    : `https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(GMAIL_TO)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
   window.open(url, "_blank");
 }
@@ -279,7 +279,7 @@ export function BookContent() {
               <p className="text-center text-[10px] leading-relaxed text-neutral-400">
                 I typically respond within 24 hours. You can also reach me directly at{" "}
                 <a
-                  href={`https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(GMAIL_TO)}`}
+                  href={`mailto:${GMAIL_TO}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline hover:text-[--color-accent]"
